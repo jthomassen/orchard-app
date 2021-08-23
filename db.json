@@ -1,0 +1,43 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "The Platform Urban Apartments",
+            "photo_1": "../public/images/PUA-1.png",
+            "photo_2":"../public/images/PUA-2.png",
+            "photo_3":"../public/images/PUA-3.png",
+            "photo_4":"../public/images/PUA-4.png",
+            "photo_5":"../public/images/PUA-5.png",
+            "location": "San Jose",
+            "availabilty": "12 months",
+            "size":"1000 sqft",
+            "price":"$3500",
+            "pets":"No"
+
+        },
+        {
+            "id": 1,
+            "title": "The Platform Urban Apartments",
+            "photo_1": "../public/images/PUA-1.png",
+            "photo_2":"../public/images/PUA-2.png",
+            "photo_3":"../public/images/PUA-3.png",
+            "photo_4":"../public/images/PUA-4.png",
+            "photo_5":"../public/images/PUA-5.png",
+            "location": "San Jose",
+            "availabilty": "12 months",
+            "size":"1000 sqft",
+            "price":"$3500",
+            "pets":"No"
+
+        }
+    ]
+
+
+
+
+
+
+
+
+
+}
