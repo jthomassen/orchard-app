@@ -4,16 +4,101 @@
             "id": 1,
             "title": "The Platform Urban Apartments",
             "photo_1": "./images/PUA-1.png",
-            "photo_2": "./images/PUA-2.png",
-            "photo_3": "./images/PUA-3.png",
-            "photo_4": "./images/PUA-4.png",
-            "photo_5": "./images/PUA-5.png",
+            "location": "San Jose",
+            "availability": "12 Months",
+            "size": "1000 sqft",
+            "price": "$3500",
+            "pets": "No"
+        },
+        {
+            "id": 2,
+            "title": "Linq",
+            "photo_1": "./images/Linq-1.png",
+            "location": "San Francisco",
+            "availability": "6 Months",
+            "size": "534 sqft",
+            "price": "$2200",
+            "pets": "Yes"
+        },
+        {
+            "id": 3,
+            "title": "Heritage Apartments",
+            "photo_1": "./images/HA-1.png",
+            "location": "San Diego",
+            "availability": "18 Months",
+            "size": "1225 sqft",
+            "price": "$4500",
+            "pets": "No"
+        },
+        {
+            "id": 4,
+            "title": "Sunshine Square",
+            "photo_1": "./images/SS-1.png",
+            "location": "San Jose",
+            "availability": "8 Months",
+            "size": "250 sqft",
+            "price": "$900",
+            "pets": "No"
+        },
+        {
+            "id": 5,
+            "title": "Mission Viejo",
+            "photo_1": "./images/MV-1.png",
+            "location": "San Francisco",
+            "availability": "9 Months",
+            "size": "6000 sqft",
+            "price": "$34000",
+            "pets": "Yes"
+        },
+        {
+            "id": 6,
+            "title": "North Park",
+            "photo_1": "./images/NP-1.png",
+            "location": "San Diego",
+            "availability": "12 Months",
+            "size": "1500 sqft",
+            "price": "$6000",
+            "pets": "No"
+        },
+        {
+            "id": 7,
+            "title": "Urban Apartments",
+            "photo_1": "./images/UA-1.png",
+            "location": "Redwood City",
+            "availability": "18 Months",
+            "size": "850 sqft",
+            "price": "$1000",
+            "pets": "Yes"
+        },
+        {
+            "id": 8,
+            "title": "The Bramford",
+            "photo_1": "./images/BF-1.png",
+            "location": "Redwood City",
+            "availability": "6 Months",
+            "size": "4000 sqft",
+            "price": "$8000",
+            "pets": "No"
+        },
+        {
+            "id": 9,
+            "title": "La Maison",
+            "photo_1": "./images/LM-1.png",
+            "location": "San Diego",
+            "availability": "12 Months",
+            "size": "1000 sqft",
+            "price": "$3500",
+            "pets": "Yes"
+        },
+        {
+            "id": 10,
+            "title": "The Miller",
+            "photo_1": "./images/TM-1.png",
             "location": "San Jose",
             "availability": "12 months",
             "size": "1000 sqft",
             "price": "$3500",
             "pets": "No"
-
         }
     ]
 

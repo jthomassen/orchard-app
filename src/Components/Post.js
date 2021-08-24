@@ -9,18 +9,29 @@ function Post({post}) {
         <div className="post">
             <div className="image-container">
                 <img className = "post-img" src={photo_1} alt={photo_1}/>
-                <img className = "post-img" src={photo_2} alt={photo_2}/>
+                {/* <img className = "post-img" src={photo_2} alt={photo_2}/>
                 <img className = "post-img" src={photo_3} alt={photo_3}/>
                 <img className = "post-img" src={photo_4} alt={photo_4}/>
-                <img className = "post-img" src={photo_5} alt={photo_5}/>
+                <img className = "post-img" src={photo_5} alt={photo_5}/> */}
             </div>
             <div className="post-info">
-                <h3>{title}</h3>
-                <h4>{location}</h4>
-                <h4>{price}</h4>
-                <h5>{availability}</h5>
-                <h5>{size}</h5>
-                <h5>Allows Pets: {pets}</h5>
+                <h4 className="location">{location}</h4>
+                <h3 className="title">{title}</h3>
+                <div className="info-container">
+                    <div className="price-key-value">
+                        <h4 className="price-key">Price</h4>
+                        <h4 className="price">{price}</h4>
+                    </div>
+                    <div className="avail-key-value">
+                        <h4 className="availability-key">Availability</h4>
+                        <h5 className="availability">{availability}</h5>
+                    </div>
+                    <div className="size-key-value">
+                        <h4 className="size-key">Size</h4>
+                        <h5 className="size">{size}</h5>
+                    </div>
+                </div>
+                {/* <h5 className="pets">Allows Pets: {pets}</h5> */}
             </div>
             <MoreInfo />
         </div>
