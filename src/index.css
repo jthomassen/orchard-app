@@ -12,6 +12,36 @@ code {
     monospace;
 }
 
-img {
+.post-img {
   width: 200px;
 }
+
+.logo-img{
+  width: 200px;
+  margin-bottom: 2%;
+  margin-left: 10px
+}
+
+.header-div{
+  display: flex; 
+  align-items: center;
+  justify-content: left;
+  margin-top: 20px;
+  border-bottom:1px solid rgb(235, 235, 235);
+}
+
+.location-search {
+  height: 75px;
+  width: 300px; 
+  margin-bottom: 2%;
+}
+
+.input-box { 
+  width: 275px;
+  height: 28px;
+  margin-top: 39px;
+
+}
+
+
+

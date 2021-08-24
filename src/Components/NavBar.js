@@ -1,34 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Price from "./Price";
 
 function NavBar() {
+    const [showPrice, setShowPrice] = useState(false)
+
+
+    function handlePriceClick(){
+        setShowPrice(!showPrice)
+    }
+
+
     return (
         <div>
-            <label>
-                Price
-                <select name="category">
-                    <option value="Produce">Produce</option>
-                    <option value="Dairy">Dairy</option>
-                    <option value="Dessert">Dessert</option>
-                </select>
-            </label>
-            <label>
-                Availability
-                <select name="category">
-                    <option value="Produce">Produce</option>
-                    <option value="Dairy">Dairy</option>
-                    <option value="Dessert">Dessert</option>
-                </select>
-            </label>
-            <label>
-                Size
-                <select name="category">
-                    <option value="Produce">Produce</option>
-                    <option value="Dairy">Dairy</option>
-                    <option value="Dessert">Dessert</option>
-                </select>
-            </label>
+           
+         <button className = "price-button" onClick = {handlePriceClick} >Price </button>
+         {showPrice? <Price/> : ""}
+           
         </div>
     );
 }
 
+
+
 export default NavBar
+
+
+
+// <button> Availability </button>
+// <button> Size </button>
