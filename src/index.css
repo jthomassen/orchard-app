@@ -12,22 +12,18 @@ code {
     monospace;
 }
 
-.post-img {
-  width: 200px;
-}
-
-.logo-img{
-  width: 200px;
-  margin-bottom: 2%;
-  margin-left: 10px
-}
-
 .header-div{
   display: flex; 
   align-items: center;
   justify-content: left;
   margin-top: 20px;
   border-bottom:1px solid rgb(235, 235, 235);
+}
+
+.logo-img{
+  width: 200px;
+  margin-bottom: 2%;
+  margin-left: 10px
 }
 
 .location-search {
@@ -40,8 +36,48 @@ code {
   width: 275px;
   height: 28px;
   margin-top: 39px;
-
 }
+
+.post {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  space-around: 
+  width: 100%; */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%
+}
+
+.image-container {
+  width: 100%;
+}
+
+.post-img {
+  width: 100%;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .avail-key-value {
+  position: absolute;
+  left: 80px;
+  top: 50px;
+}
+
+.size-key-value {
+  float: right;
+} */
+
+
+
+
 
 
 
