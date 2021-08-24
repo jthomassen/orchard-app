@@ -8,11 +8,11 @@ function Post({post}) {
     return (
         <div className="post">
             <div className="image-container">
-                <img src={photo_1} alt={photo_1}/>
-                <img src={photo_2} alt={photo_2}/>
-                <img src={photo_3} alt={photo_3}/>
-                <img src={photo_4} alt={photo_4}/>
-                <img src={photo_5} alt={photo_5}/>
+                <img className = "post-img" src={photo_1} alt={photo_1}/>
+                <img className = "post-img" src={photo_2} alt={photo_2}/>
+                <img className = "post-img" src={photo_3} alt={photo_3}/>
+                <img className = "post-img" src={photo_4} alt={photo_4}/>
+                <img className = "post-img" src={photo_5} alt={photo_5}/>
             </div>
             <div className="post-info">
                 <h3>{title}</h3>
