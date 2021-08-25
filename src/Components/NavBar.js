@@ -13,20 +13,20 @@ function NavBar({priceSearch, handlePriceSearch}) {
     function handlePriceClick(){
         setShowPrice(!showPrice)
 
-    //     if (!showPrice){
-    //         setShowPrice(!showPrice) && setShowAvail(showAvail) 
-    //         && setShowSize(showSize)
-    //     }
+        // if (!showPrice === false){
+        //     setShowPrice(!showPrice) && setShowAvail(showAvail) 
+        //     && setShowSize(showSize)
+        // }
      }
 
     function handleAvailClick(){
         setShowAvail(!showAvail)
 
-    //     if (!showAvail){
-    //         setShowAvail(!showAvail)
-    //         setShowPrice(showPrice) 
-    //         setShowSize(!showSize)
-    //     }
+        // if (!showAvail === false){
+        //     setShowAvail(!showAvail)
+        //     && setShowPrice(showPrice) 
+        //     && setShowSize(!showSize)
+        // }
         
      }
 
