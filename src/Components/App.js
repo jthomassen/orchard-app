@@ -19,7 +19,7 @@ function App() {
   }, [] )
 
   function handleSearch(city){
-    setPriceSearch(city)
+    setLocationSearch(city)
   }
 
   // function handlePriceClickOne(price){
