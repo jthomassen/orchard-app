@@ -9,6 +9,7 @@ const postAPI = 'http://localhost:3001/posts'
 function App() {
 
   const [posts, setPosts] = useState([]);
+  const [locationSearch, setLocationSearch] = useState('')
 
   useEffect(() => {
     fetch(postAPI)
@@ -16,11 +17,20 @@ function App() {
       .then(json => setPosts(json))
   }, [] )
 
+  function handleSearch(city){
+    setLocationSearch(city)
+  }
+
   return (
     <div className="App">
-      <Header />
+      <Header 
+        handleSearch={handleSearch}
+      />
       <NavBar />
-      <PostContainer posts={posts}/>
+      <PostContainer 
+        posts={posts} 
+        locationSearch={locationSearch} 
+      />
       <Map />
     </div>
   );
