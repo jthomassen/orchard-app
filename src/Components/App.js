@@ -10,6 +10,7 @@ function App() {
 
   const [posts, setPosts] = useState([]);
   const [locationSearch, setLocationSearch] = useState('')
+  const [priceSearch, setPriceSearch] = useState(100)
 
   useEffect(() => {
     fetch(postAPI)
@@ -18,18 +19,27 @@ function App() {
   }, [] )
 
   function handleSearch(city){
-    setLocationSearch(city)
+    setPriceSearch(city)
   }
+
+  // function handlePriceClickOne(price){
+  //   setPriceSearch(price)
+        
+  // }
+
 
   return (
     <div className="App">
       <Header 
         handleSearch={handleSearch}
       />
-      <NavBar />
+      <NavBar priceSearch = {priceSearch} />
       <PostContainer 
         posts={posts} 
-        locationSearch={locationSearch} 
+        locationSearch={locationSearch}
+        priceSearch = {priceSearch}
+
+
       />
       <Map />
     </div>

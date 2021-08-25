@@ -3,22 +3,41 @@ import Price from "./Price";
 import Availability from "./Availability";
 import Size from "./Size";
 
-function NavBar() {
+function NavBar({priceSearch, handlePriceSearch}) {
     const [showPrice, setShowPrice] = useState(false)
     const [showAvail, setShowAvail] = useState(false)
     const [showSize, setShowSize] = useState(false)
 
 
+
     function handlePriceClick(){
         setShowPrice(!showPrice)
-    }
+
+    //     if (!showPrice){
+    //         setShowPrice(!showPrice) && setShowAvail(showAvail) 
+    //         && setShowSize(showSize)
+    //     }
+     }
 
     function handleAvailClick(){
         setShowAvail(!showAvail)
-    }
+
+    //     if (!showAvail){
+    //         setShowAvail(!showAvail)
+    //         setShowPrice(showPrice) 
+    //         setShowSize(!showSize)
+    //     }
+        
+     }
 
     function handleSizeClick(){
         setShowSize(!showSize)
+
+        // if (!showSize){
+        //     setShowSize(!showSize)
+        //     setShowAvail(showAvail) 
+        //     setShowPrice(!showPrice)
+        // }
     }
 
 

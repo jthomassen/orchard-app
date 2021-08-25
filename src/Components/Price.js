@@ -3,17 +3,21 @@ import React from 'react';
 
 function Price(){
 
+
+   
     return (
         <div className="price-box">
             <h4 className="price-box-header">Monthly Budget</h4>
-            <div>
-                <button>$500-$1000</button>
+            
+            <div className = "price-range-button-container">
+                <button
+                 className ="price-range-button-1">$500-$1000</button>
             </div>
             <div>
-                <button>$1000-$3000</button>
+                <button className ="price-range-button-2">$1000-$3000</button>
             </div>
             <div>
-                <button>$3000+</button>
+                <button className ="price-range-button-3">$3000+</button>
             </div>
         </div>
 
