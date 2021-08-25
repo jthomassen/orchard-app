@@ -49,6 +49,7 @@ code {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   width: 90%
 }
 
@@ -57,23 +58,92 @@ code {
 }
 
 .post-img {
-  width: 100%;
+  width: 60%;
 }
 
 .info-container {
   display: flex;
   flex-direction: row;
+  
 }
 
-/* .avail-key-value {
-  position: absolute;
-  left: 80px;
-  top: 50px;
+.location {
+
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: grey
+
+}
+
+.price-key{
+
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: grey;
+  font-size: 14px;
+  margin-bottom: 8px;
+
+}
+
+
+.availability-key{
+
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: grey;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.size-key{
+
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: grey;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:60;
+  margin-top: 1px;
+}
+
+
+.availability{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:60;
+  margin-top: 1px;
+}
+
+.size{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:60;
+  margin-top: 1px;
+}
+
+.price-key-value{
+  padding-right: 5%;
+
+}
+
+ .avail-key-value {
+  padding-left: 5%;
+  padding-right: 5%;
+  border-left: 1px solid rgb(216, 210, 210);
+  
+ 
 }
 
 .size-key-value {
-  float: right;
-} */
+  padding-left: 5%;
+  border-left: 1px solid rgb(216, 210, 210);
+
+  
+
+
+} 
 
 
 

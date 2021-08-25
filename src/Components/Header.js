@@ -3,7 +3,7 @@ import React from 'react';
 function Header() {
     return (
         <div className = "header-div">
-            <img className = "logo-img" src = "./Images/Orchard-logo.png"/>
+            <img className = "logo-img" src = "./Images/Orchard-logo.png" alt = "orchard-logo"/>
             <form className="location-search">
                 <label>
                     <input className = "input-box" 
