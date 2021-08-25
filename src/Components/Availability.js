@@ -1,31 +1,24 @@
 import React from 'react';
 
-
-function Price(){
-
+function Availability() {
     return (
-        <div className="price-box">
-            <h4 className="price-box-header">Monthly Budget</h4>
+        <div>
+            <h4>Availability</h4>
             <div>
-                <button>$500-$1000</button>
+                <button>1-6 Months</button>
             </div>
             <div>
-                <button>$1000-$3000</button>
+                <button>7-12 Months</button>
             </div>
             <div>
-                <button>$3000+</button>
+                <button>12+ Months</button>
             </div>
         </div>
-
-
-
-
-
-
-
-        // <div className="price-box">
-        //     <h4 className="price-box-header">Monthly Budget</h4>
-        //     <form className="price-search-box">
+            
+            
+            
+        // <div> 
+        //     <form>
         //         <label>
         //             <input 
         //                 className="price-input-box" 
@@ -36,10 +29,7 @@ function Price(){
         //         </label>
         //     </form>
         // </div>
-    );
-
+    )
 }
 
-
-export default Price
-
+export default Availability

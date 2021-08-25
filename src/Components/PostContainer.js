@@ -1,10 +1,13 @@
 import React from 'react';
 import Post from './Post'
 
-function PostContainer({posts}) {
+function PostContainer({posts, locationSearch}) {
+
     return (
         <div>
-            {posts.map((post) => (
+            {posts
+            .filter((post) => post.location.toLowerCase().startsWith(locationSearch))
+            .map((post) => (
                 <Post
                     key={post.id}
                     post={post}

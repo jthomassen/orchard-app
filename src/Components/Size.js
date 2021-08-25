@@ -1,31 +1,24 @@
 import React from 'react';
 
-
-function Price(){
-
+function Size() {
     return (
-        <div className="price-box">
-            <h4 className="price-box-header">Monthly Budget</h4>
+        <div>
+            <h4>Size</h4>
             <div>
-                <button>$500-$1000</button>
+                <button>100-2000 sqft</button>
             </div>
             <div>
-                <button>$1000-$3000</button>
+                <button>2000-5000 sqft</button>
             </div>
             <div>
-                <button>$3000+</button>
+                <button>5000+ sqft</button>
             </div>
         </div>
 
 
-
-
-
-
-
-        // <div className="price-box">
-        //     <h4 className="price-box-header">Monthly Budget</h4>
-        //     <form className="price-search-box">
+        // <div>
+        //     <h4>Maximum Size</h4>
+        //     <form>
         //         <label>
         //             <input 
         //                 className="price-input-box" 
@@ -36,10 +29,7 @@ function Price(){
         //         </label>
         //     </form>
         // </div>
-    );
-
+    )
 }
 
-
-export default Price
-
+export default Size
