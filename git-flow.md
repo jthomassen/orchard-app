@@ -1,6 +1,6 @@
 UPDATING CHANGES FROM COLLABORATOR
 
-git checkout main
+git checkout main 
 git pull origin main
 
 
@@ -8,7 +8,7 @@ git pull origin main
 UPDATING PARENT BRANCH
 
 make sure you have updated from collaborator first^^^
-git checkout -b name-of-updated-branch
+git checkout -b name-of-updated-branch (give a new name)
 save changes
 git add .
 git commit -m "New Update"

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import MoreInfo from './MoreInfo'
 
@@ -19,21 +20,21 @@ function Post({post}) {
                 <h3 className="title">{title}</h3>
                 <div className="info-container">
                     <div className="price-key-value">
-                        <h4 className="price-key">Price</h4>
-                        <h4 className="price">{price}</h4>
+                        <h4 className="price-key">PRICE</h4>
+                        <h5 className="price">{price}</h5>
                     </div>
                     <div className="avail-key-value">
-                        <h4 className="availability-key">Availability</h4>
+                        <h4 className="availability-key">AVAILABILITY</h4>
                         <h5 className="availability">{availability}</h5>
                     </div>
                     <div className="size-key-value">
-                        <h4 className="size-key">Size</h4>
+                        <h4 className="size-key">SIZE</h4>
                         <h5 className="size">{size}</h5>
                     </div>
                 </div>
                 {/* <h5 className="pets">Allows Pets: {pets}</h5> */}
             </div>
-            <MoreInfo />
+           
         </div>
     );
 }
