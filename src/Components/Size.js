@@ -2,16 +2,16 @@ import React from 'react';
 
 function Size() {
     return (
-        <div>
-            <h4>Size</h4>
-            <div>
-                <button>100-2000 sqft</button>
+        <div className="size-box">
+            <h4 className="size-box-header">Size</h4>
+            <div className = "size-range-button-container">
+                <button className ="size-range-button-1">100-2000 sqft</button>
             </div>
             <div>
-                <button>2000-5000 sqft</button>
+                <button className ="size-range-button-2">2000-5000 sqft</button>
             </div>
             <div>
-                <button>5000+ sqft</button>
+                <button className ="size-range-button-3">5000+ sqft</button>
             </div>
         </div>
 

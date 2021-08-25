@@ -21,7 +21,7 @@ function Post({post}) {
                 <div className="info-container">
                     <div className="price-key-value">
                         <h4 className="price-key">PRICE</h4>
-                        <h5 className="price">{price}</h5>
+                        <h5 className="price">${price}/mo</h5>
                     </div>
                     <div className="avail-key-value">
                         <h4 className="availability-key">AVAILABILITY</h4>

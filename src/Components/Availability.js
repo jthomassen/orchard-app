@@ -2,16 +2,16 @@ import React from 'react';
 
 function Availability() {
     return (
-        <div>
-            <h4>Availability</h4>
-            <div>
-                <button>1-6 Months</button>
+        <div className="avail-box">
+            <h4 className="avail-box-header">Availability</h4>
+            <div className = "avail-range-button-container">
+                <button className ="avail-range-button-1">1-6 Months</button>
             </div>
             <div>
-                <button>7-12 Months</button>
+                <button className ="avail-range-button-2">7-12 Months</button>
             </div>
             <div>
-                <button>12+ Months</button>
+                <button className ="avail-range-button-3">12+ Months</button>
             </div>
         </div>
             
