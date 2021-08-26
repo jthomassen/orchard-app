@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch, Route, Link
+  
+  } from 'react-router-dom'
 
 function Header({handleSearch}) {
 
@@ -9,6 +14,7 @@ function Header({handleSearch}) {
     }
 
     return (
+        <Router>
         <div className = "header-div">
             <img className = "logo-img" src = "./Images/Orchard-logo.png" alt = "orchard-logo"/>
             <form 
@@ -28,7 +34,9 @@ function Header({handleSearch}) {
                         />
                 </label>
             </form>
+            <Link> Home</Link>
         </div>
+       </Router>
     ); 
 }
 
