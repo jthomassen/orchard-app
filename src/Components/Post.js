@@ -25,11 +25,11 @@ function Post({post}) {
                     </div>
                     <div className="avail-key-value">
                         <h4 className="availability-key">AVAILABILITY</h4>
-                        <h5 className="availability">{availability}</h5>
+                        <h5 className="availability">{availability} Months</h5>
                     </div>
                     <div className="size-key-value">
                         <h4 className="size-key">SIZE</h4>
-                        <h5 className="size">{size}</h5>
+                        <h5 className="size">{size} sqft</h5>
                     </div>
                 </div>
                 {/* <h5 className="pets">Allows Pets: {pets}</h5> */}

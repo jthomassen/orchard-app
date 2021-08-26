@@ -10,7 +10,6 @@ function App() {
 
   const [posts, setPosts] = useState([]);
   const [locationSearch, setLocationSearch] = useState('')
-  const [priceSearch, setPriceSearch] = useState(100)
 
   useEffect(() => {
     fetch(postAPI)
@@ -22,10 +21,20 @@ function App() {
     setLocationSearch(city)
   }
 
-  // function handlePriceClickOne(price){
-  //   setPriceSearch(price)
-        
-  // }
+  const filterPrice = (priceNumMin, priceNumMax) => {
+    const filteredPrice = posts.filter((post) => post.price <= priceNumMax && post.price >= priceNumMin)
+    setPosts(filteredPrice)
+  }
+
+  const filterAvail = (availNumMin, availNumMax) => {
+    const filteredAvail = posts.filter((post) => post.availability <= availNumMax && post.availability >= availNumMin)
+    setPosts(filteredAvail)
+  }
+
+  const filterSize = (sizeNumMin, sizeNumMax) => {
+    const filteredSize = posts.filter((post) => post.size <= sizeNumMax && post.size >= sizeNumMin)
+    setPosts(filteredSize)
+  }
 
 
   return (
@@ -33,13 +42,14 @@ function App() {
       <Header 
         handleSearch={handleSearch}
       />
-      <NavBar priceSearch = {priceSearch} />
+      <NavBar 
+        filterPrice={filterPrice}
+        filterAvail={filterAvail}
+        filterSize={filterSize}
+        />
       <PostContainer 
         posts={posts} 
         locationSearch={locationSearch}
-        priceSearch = {priceSearch}
-
-
       />
       <Map />
     </div>

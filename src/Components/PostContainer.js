@@ -7,10 +7,6 @@ function PostContainer({posts, locationSearch, priceSearch}) {
         <div>
             {posts
             .filter((post) => post.location.toLowerCase().startsWith(locationSearch))
-            .filter((post) => post.price )
-            // .filter(post => post.price > 500 && post.price < 1000, {priceSearch})
-            // .filter(post => post.price > 1000 && post.price < 3000, {priceSearch})
-            // .filter(post => post.price >= 3000, {priceSearch})
             .map((post) => (
                 <Post
                     key={post.id}

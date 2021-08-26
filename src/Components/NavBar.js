@@ -3,7 +3,7 @@ import Price from "./Price";
 import Availability from "./Availability";
 import Size from "./Size";
 
-function NavBar({priceSearch, handlePriceSearch}) {
+function NavBar({filterPrice, filterAvail, filterSize}) {
     const [showPrice, setShowPrice] = useState(false)
     const [showAvail, setShowAvail] = useState(false)
     const [showSize, setShowSize] = useState(false)
@@ -48,7 +48,7 @@ function NavBar({priceSearch, handlePriceSearch}) {
                     className="price-button" 
                     onClick = {handlePriceClick} >Price 
                 </button>
-                {showPrice? <Price/> : ""}
+                {showPrice? <Price filterPrice={filterPrice}/> : ""}
             </div>
             
             <div className="avail-button-container">
@@ -56,7 +56,7 @@ function NavBar({priceSearch, handlePriceSearch}) {
                     className="avail-button" 
                     onClick={handleAvailClick} >Availability 
                 </button>
-                {showAvail? <Availability/> : ""}
+                {showAvail? <Availability filterAvail={filterAvail}/> : ""}
             </div>
             
             <div className="size-button-container">
@@ -64,7 +64,7 @@ function NavBar({priceSearch, handlePriceSearch}) {
                     className="size-button" 
                     onClick={handleSizeClick} >Size 
                 </button>
-                {showSize? <Size/> : ""}
+                {showSize? <Size filterSize={filterSize}/> : ""}
             </div>
            
         </div>
