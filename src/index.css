@@ -43,7 +43,7 @@ code {
 }
 
 .listing-button{
-  margin-left: 762px;
+  margin-left: 600px;
   height: 40px;
   width: 180px;
   font-size: 15px;
@@ -51,9 +51,6 @@ code {
   color: black;
   border: 1px solid black;
   border-radius: 8px;
-
-  
-
 }
 
 .input-box { 
@@ -299,8 +296,8 @@ code {
 }
 
 .post-img {
-  width: 1500px;
-  height: 600px;
+  width: 1340px;
+  height: 500px;
   object-fit: cover;
 }
 
