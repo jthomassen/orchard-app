@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import ListingForm from './ListingForm';
 import {
     BrowserRouter as Router,
     Switch, Route, Link
@@ -13,8 +14,7 @@ function Header({handleSearch}) {
         setSearchTerm(e.target.value)
     }
 
-    return (
-        <Router>
+    return ( 
         <div className = "header-div">
             <img className = "logo-img" src = "./Images/Orchard-logo.png" alt = "orchard-logo"/>
             <form 
@@ -34,9 +34,16 @@ function Header({handleSearch}) {
                         />
                 </label>
             </form>
-            <Link> Home</Link>
+
+
+            <Route >
+              <Link to="/listing">
+                  <button className="listing-buttong">Publish a listing</button>
+              </Link>
+            </Route>
+
+
         </div>
-       </Router>
     ); 
 }
 

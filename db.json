@@ -1,107 +1,104 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "title": "The Platform Urban Apartments",
-            "photo_1": "./images/PUA-3.png",
-            "location": "SAN JOSE",
-            "availability": 12,
-            "size": 1000,
-            "price": 3500,
-            "pets": "No"
-        },
-        {
-            "id": 2,
-            "title": "Linq",
-            "photo_1": "./images/Linq-1.png",
-            "location": "SAN FRANCISCO",
-            "availability": 6,
-            "size": 534,
-            "price": 2200,
-            "pets": "Yes"
-        },
-        {
-            "id": 3,
-            "title": "Heritage Apartments",
-            "photo_1": "./images/HA-1.png",
-            "location": "SAN DIEGO",
-            "availability": 18,
-            "size": 1225,
-            "price": 4500,
-            "pets": "No"
-        },
-        {
-            "id": 4,
-            "title": "Sunshine Square",
-            "photo_1": "./images/SS-1.png",
-            "location": "SAN JOSE",
-            "availability": 8,
-            "size": 250,
-            "price": 900,
-            "pets": "No"
-        },
-        {
-            "id": 5,
-            "title": "Mission Viejo",
-            "photo_1": "./images/MV-1.png",
-            "location": "SAN FRANCISCO",
-            "availability": 9,
-            "size": 6000,
-            "price": 34000,
-            "pets": "Yes"
-        },
-        {
-            "id": 6,
-            "title": "North Park",
-            "photo_1": "./images/NP-1.png",
-            "location": "SAN DIEGO",
-            "availability": 12,
-            "size": 1500,
-            "price": 6000,
-            "pets": "No"
-        },
-        {
-            "id": 7,
-            "title": "Urban Apartments",
-            "photo_1": "./images/UA-1.png",
-            "location": "REDWOOD CITY",
-            "availability": 18,
-            "size": 850,
-            "price": 1000,
-            "pets": "Yes"
-        },
-        {
-            "id": 8,
-            "title": "The Bramford",
-            "photo_1": "./images/BF-1.png",
-            "location": "REDWOOD CITY",
-            "availability": 6,
-            "size": 4000,
-            "price": 8000,
-            "pets": "No"
-        },
-        {
-            "id": 9,
-            "title": "La Maison",
-            "photo_1": "./images/LM-1.png",
-            "location": "SAN DIEGO",
-            "availability": 12,
-            "size": 1000,
-            "price": 3500,
-            "pets": "Yes"
-        },
-        {
-            "id": 10,
-            "title": "The Miller",
-            "photo_1": "./images/TM-1.png",
-            "location": "SAN JOSE",
-            "availability": 12,
-            "size": 1000,
-            "price": 3500,
-            "pets": "No"
-        }
-    ]
-
-
-
+  "posts": [
+    {
+      "id": 1,
+      "title": "The Platform Urban Apartments",
+      "photo_1": "./images/PUA-3.png",
+      "location": "SAN JOSE",
+      "availability": 12,
+      "size": 1000,
+      "price": 3500,
+      "pets": "No"
+    },
+    {
+      "id": 2,
+      "title": "Linq",
+      "photo_1": "./images/Linq-1.png",
+      "location": "SAN FRANCISCO",
+      "availability": 6,
+      "size": 534,
+      "price": 2200,
+      "pets": "Yes"
+    },
+    {
+      "id": 3,
+      "title": "Heritage Apartments",
+      "photo_1": "./images/HA-1.png",
+      "location": "SAN DIEGO",
+      "availability": 18,
+      "size": 1225,
+      "price": 4500,
+      "pets": "No"
+    },
+    {
+      "id": 4,
+      "title": "Sunshine Square",
+      "photo_1": "./images/SS-1.png",
+      "location": "SAN JOSE",
+      "availability": 8,
+      "size": 250,
+      "price": 900,
+      "pets": "No"
+    },
+    {
+      "id": 5,
+      "title": "Mission Viejo",
+      "photo_1": "./images/MV-1.png",
+      "location": "SAN FRANCISCO",
+      "availability": 9,
+      "size": 6000,
+      "price": 34000,
+      "pets": "Yes"
+    },
+    {
+      "id": 6,
+      "title": "North Park",
+      "photo_1": "./images/NP-1.png",
+      "location": "SAN DIEGO",
+      "availability": 12,
+      "size": 1500,
+      "price": 6000,
+      "pets": "No"
+    },
+    {
+      "id": 7,
+      "title": "Urban Apartments",
+      "photo_1": "./images/UA-1.png",
+      "location": "REDWOOD CITY",
+      "availability": 18,
+      "size": 850,
+      "price": 1000,
+      "pets": "Yes"
+    },
+    {
+      "id": 8,
+      "title": "The Bramford",
+      "photo_1": "./images/BF-1.png",
+      "location": "REDWOOD CITY",
+      "availability": 6,
+      "size": 4000,
+      "price": 8000,
+      "pets": "No"
+    },
+    {
+      "id": 9,
+      "title": "La Maison",
+      "photo_1": "./images/LM-1.png",
+      "location": "SAN DIEGO",
+      "availability": 12,
+      "size": 1000,
+      "price": 3500,
+      "pets": "Yes"
+    },
+    {
+      "id": 10,
+      "title": "The Miller",
+      "photo_1": "./images/TM-1.png",
+      "location": "SAN JOSE",
+      "availability": 12,
+      "size": 1000,
+      "price": 3500,
+      "pets": "No"
+    }
+  ]
 }

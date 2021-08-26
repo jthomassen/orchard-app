@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header'
+import ListingForm from './ListingForm';
 import NavBar from './NavBar'
 import PostContainer from './PostContainer'
 import Map from './Map'
@@ -22,6 +23,19 @@ function App() {
       .then(json => setPosts(json))
   }, [] )
 
+  function addListing(listing) {
+    fetch(postAPI, {
+      method: 'POST',
+      body: JSON.stringify(listing),
+      headers: {
+        Accepts: 'application/json',
+        'Content-type': 'application/json',
+      },
+    })
+      .then((res) => res.json())
+      .then((json) => setPosts([...posts, json]));
+  }
+
   function handleSearch(city){
     setLocationSearch(city)
   }
@@ -43,32 +57,72 @@ function App() {
 
 
   return (
-
     <Router>
-       <div className="App">
 
-      
-      
+      <div className="App">
         <Switch>
-          <Route exact path="/"> 
-              <Header 
-                  handleSearch={handleSearch}
-              />
-              <NavBar 
-                filterPrice={filterPrice}
-                filterAvail={filterAvail}
-                filterSize={filterSize}
-                />
 
-              <PostContainer 
-                posts={posts} 
-                locationSearch={locationSearch}
-              />
-              <Map />
+
+          <Route exact path="/">
+            <Link to="/home">
+              <img className = "logo-img" src = "./Images/Orchard-logo.png" alt = "orchard-logo"/>
+
+            </Link>
           </Route>
+
+
+
+
+
+
+
+
+
+
+
+          <Route exact path="/home">
+            <Header 
+                handleSearch={handleSearch}
+            />
+            <NavBar 
+              filterPrice={filterPrice}
+              filterAvail={filterAvail}
+              filterSize={filterSize}
+              />
+
+            <PostContainer 
+              posts={posts} 
+              locationSearch={locationSearch}
+            />
+            <Map />
+          </Route>
+
+
+
+
+
+
+
+
+
+
+
+
+          <Route exact path="/listing">
+            <ListingForm
+              handleSubmit={addListing}
+            />
+          </Route>
+
+
+
+
+
         </Switch>
+        
       </div>
     </Router>
+    
   );
 }
 
