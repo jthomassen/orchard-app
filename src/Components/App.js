@@ -3,6 +3,11 @@ import Header from './Header'
 import NavBar from './NavBar'
 import PostContainer from './PostContainer'
 import Map from './Map'
+import {
+  BrowserRouter as Router,
+  Switch, Route, Link
+
+} from 'react-router-dom'
 
 const postAPI = 'http://localhost:3001/posts'
 
@@ -38,21 +43,32 @@ function App() {
 
 
   return (
-    <div className="App">
-      <Header 
-        handleSearch={handleSearch}
-      />
-      <NavBar 
-        filterPrice={filterPrice}
-        filterAvail={filterAvail}
-        filterSize={filterSize}
-        />
-      <PostContainer 
-        posts={posts} 
-        locationSearch={locationSearch}
-      />
-      <Map />
-    </div>
+
+    <Router>
+       <div className="App">
+
+      
+      
+        <Switch>
+          <Route exact path="/"> 
+              <Header 
+                  handleSearch={handleSearch}
+              />
+              <NavBar 
+                filterPrice={filterPrice}
+                filterAvail={filterAvail}
+                filterSize={filterSize}
+                />
+
+              <PostContainer 
+                posts={posts} 
+                locationSearch={locationSearch}
+              />
+              <Map />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
