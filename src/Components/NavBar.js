@@ -8,37 +8,43 @@ function NavBar({filterPrice, filterAvail, filterSize}) {
     const [showAvail, setShowAvail] = useState(false)
     const [showSize, setShowSize] = useState(false)
 
-
+    
 
     function handlePriceClick(){
-        setShowPrice(!showPrice)
+        setShowPrice(!showPrice) 
 
-        // if (!showPrice === false){
-        //     setShowPrice(!showPrice) && setShowAvail(showAvail) 
-        //     && setShowSize(showSize)
-        // }
+    //  if (!showPrice){
+    //         setShowAvail(showAvail === false) && setShowSize(showSize === false) 
+    //     }else {
+    //     setShowAvail(!showAvail === false) 
+    //     }
+        
      }
 
     function handleAvailClick(){
         setShowAvail(!showAvail)
 
-        // if (!showAvail === false){
-        //     setShowAvail(!showAvail)
-        //     && setShowPrice(showPrice) 
-        //     && setShowSize(!showSize)
+        // if (showAvail=== true){
+        //     setShowPrice(showPrice === false) && setShowSize(showSize === false) 
+        // }else {
+        //     setShowPrice(showPrice === false) && setShowSize(showSize === false)
         // }
         
      }
 
     function handleSizeClick(){
-        setShowSize(!showSize)
+        setShowSize(!showSize)  
 
-        // if (!showSize){
-        //     setShowSize(!showSize)
-        //     setShowAvail(showAvail) 
-        //     setShowPrice(!showPrice)
+        // if (showSize=== true){
+        //     setShowPrice(showPrice === false) && setShowAvail(showAvail === false) 
+        // }else {
+        //     setShowPrice(showPrice === false) && setShowAvail(showAvail === false)
         // }
+
     }
+
+  
+
 
 
     return (

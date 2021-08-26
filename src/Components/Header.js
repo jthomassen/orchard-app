@@ -38,7 +38,7 @@ function Header({handleSearch}) {
 
             <Route >
               <Link to="/listing">
-                  <button className="listing-buttong">Publish a listing</button>
+                  <button className="listing-button">Publish a listing</button>
               </Link>
             </Route>
 

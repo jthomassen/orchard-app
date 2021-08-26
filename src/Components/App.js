@@ -65,8 +65,9 @@ function App() {
 
           <Route exact path="/">
             <Link to="/home">
-              <img className = "logo-img" src = "./Images/Orchard-logo.png" alt = "orchard-logo"/>
-
+              <div className = "front-page-logo-container">
+                <img className = "front-page-logo" src = "./Images/Orchard-logo.png" alt = "orchard-logo"/>
+              </div>
             </Link>
           </Route>
 
