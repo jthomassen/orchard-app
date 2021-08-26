@@ -1,3 +1,11 @@
+.front-page-logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:900px
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -32,6 +40,20 @@ code {
   height: 75px;
   width: 300px; 
   margin-bottom: 3%;
+}
+
+.listing-button{
+  margin-left: 762px;
+  height: 40px;
+  width: 180px;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+
+  
+
 }
 
 .input-box { 
@@ -277,8 +299,8 @@ code {
 }
 
 .post-img {
-  width: 800px;
-  height: 400px;
+  width: 1500px;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -365,8 +387,59 @@ code {
 } 
 
 
+.listing-form-container{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+
+.your-listing{
+  margin-left: 80px
+}
+
+.input-text{
+  width: 275px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+
+}
+
+.listing-publish{
+  height: 35px;
+  width: 105px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid rgb(10, 5, 5);
+  border-radius: 3px;
+  margin-top: 35px;
+  margin-left: 85px
+
+}
+
+.add-listing-form{
+  margin-bottom: 0%
+}
+
+.listing-image{
+  width: 100%;
+  margin-top: 40px;
 
 
+}
 
-
-
+/* display: block;
+margin-left: 100px;
+margin-right: auto;
+margin-top: 30px;
+margin-bottom: 50px;
+width: 90% */

@@ -27,12 +27,13 @@ function ListingForm({ handleSubmit }) {
     }
   
     return (
-    <div className="container">
+    <div className="listing-page-container">
         
         <HeaderList />
 
-        <form className="add-toy-form" onSubmit={onSubmit}>
-          <h3>Your Listing</h3>
+      <div className = "listing-form-container">
+        <form className="add-listing-form" onSubmit={onSubmit}>
+          <h3 className = "your-listing">Your Listing</h3>
           <input
             type="text"
             name="title"
@@ -91,9 +92,15 @@ function ListingForm({ handleSubmit }) {
             type="submit"
             name="submit"
             value="Publish"
-            className="submit"
+            className="listing-publish"
           />
+
         </form>
+
+      </div>
+      <div >
+        <img className = "listing-image" src = "./Images/Listing-page-bottom-border.png" alt = "bg-image"/>
+      </div>
     </div>
     );
   }
