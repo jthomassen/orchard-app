@@ -26,4 +26,5 @@ To run the local server for the API in the CLI, run:
 To install and run the dependencies for the local server frontend in the CLI, run:
 
 ```$ npm install```
+
 ```$ npm start```
