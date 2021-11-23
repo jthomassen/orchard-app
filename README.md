@@ -20,8 +20,10 @@ As a user, I want to:
 This app has not been deployed.
 
 To run the local server for the API in the CLI, run:
+
 ```$ json-server --watch db.json -p 3001```
 
 To install and run the dependencies for the local server frontend in the CLI, run:
+
 ```$ npm install```
 ```$ npm start```
